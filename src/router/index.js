@@ -155,9 +155,16 @@ export const constantRoutes = [
       {
         path: 'coupon',
         name: 'Coupon',
-        component: () => import('@/views/marketing/coupon'),
+        component: () => import('@/views/marketing/index'),
         meta: { title: '营销管理', icon: 'example' }
-      }
+      },
+      {
+        path: 'couponAdd',
+        name: 'CouponAdd',
+        component: () => import('@/views/marketing/coupon'),
+        meta: {title: '添加权益卡'},
+        hidden: true
+      },
     ]
   },
   {
